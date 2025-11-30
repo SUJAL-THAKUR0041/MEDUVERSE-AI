@@ -1,0 +1,109 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js
+1 info using npm@10.9.4
+2 info using node@v22.21.1
+3 silly config load:file:C:\Program Files\nodejs\node_modules\npm\npmrc
+4 silly config load:file:E:\Meduverse\.npmrc
+5 silly config load:file:C:\Users\Sujal\.npmrc
+6 silly config load:file:E:\Meduverse\%APPDATA%\npm\etc\npmrc
+7 verbose title npm install react-leaflet@^3.2.5
+8 verbose argv "install" "react-leaflet@^3.2.5"
+9 verbose logfile logs-max:10 dir:E:\Meduverse\%APPDATA%\npm-cache\_logs\2025-11-29T08_56_15_413Z-
+10 verbose logfile E:\Meduverse\%APPDATA%\npm-cache\_logs\2025-11-29T08_56_15_413Z-debug-0.log
+11 silly logfile start cleaning logs, removing 1 files
+12 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
+13 silly logfile done cleaning log files
+14 silly idealTree buildDeps
+15 silly fetch manifest react-leaflet@^3.2.5
+16 silly packumentCache full:https://registry.npmjs.org/react-leaflet cache-miss
+17 http cache https://registry.npmjs.org/react-leaflet 14ms (cache hit)
+18 silly packumentCache full:https://registry.npmjs.org/react-leaflet set size:472546 disposed:false
+19 silly fetch manifest leaflet@^1.7.1
+20 silly packumentCache full:https://registry.npmjs.org/leaflet cache-miss
+21 http cache https://registry.npmjs.org/leaflet 5ms (cache hit)
+22 silly packumentCache full:https://registry.npmjs.org/leaflet set size:146664 disposed:false
+23 silly fetch manifest react@^17.0.1
+24 silly packumentCache full:https://registry.npmjs.org/react cache-miss
+25 http cache https://registry.npmjs.org/react 20ms (cache hit)
+26 silly packumentCache full:https://registry.npmjs.org/react set size:6287832 disposed:false
+27 silly fetch manifest react-dom@^17.0.1
+28 silly packumentCache full:https://registry.npmjs.org/react-dom cache-miss
+29 http cache https://registry.npmjs.org/react-dom 15ms (cache hit)
+30 silly packumentCache full:https://registry.npmjs.org/react-dom set size:8246867 disposed:false
+31 silly placeDep ROOT react-leaflet@3.2.5 OK for:  want: ^3.2.5
+32 silly placeDep ROOT react@17.0.2 OK for: react-leaflet@3.2.5 want: ^17.0.1
+33 silly placeDep ROOT leaflet@1.9.4 OK for: react-leaflet@3.2.5 want: ^1.7.1
+34 silly placeDep ROOT react-dom@17.0.2 OK for: react-leaflet@3.2.5 want: ^17.0.1
+35 silly fetch manifest @react-leaflet/core@^1.1.1
+36 silly packumentCache full:https://registry.npmjs.org/@react-leaflet%2fcore cache-miss
+37 silly fetch manifest scheduler@^0.20.2
+38 silly packumentCache full:https://registry.npmjs.org/scheduler cache-miss
+39 silly fetch manifest loose-envify@^1.1.0
+40 silly packumentCache full:https://registry.npmjs.org/loose-envify cache-miss
+41 silly fetch manifest object-assign@^4.1.1
+42 silly packumentCache full:https://registry.npmjs.org/object-assign cache-miss
+43 silly fetch manifest loose-envify@^1.1.0
+44 silly packumentCache full:https://registry.npmjs.org/loose-envify cache-miss
+45 silly fetch manifest object-assign@^4.1.1
+46 silly packumentCache full:https://registry.npmjs.org/object-assign cache-miss
+47 http fetch GET 200 https://registry.npmjs.org/object-assign 420ms (cache miss)
+48 silly packumentCache full:https://registry.npmjs.org/object-assign set size:undefined disposed:false
+49 http fetch GET 200 https://registry.npmjs.org/object-assign 422ms (cache miss)
+50 silly packumentCache full:https://registry.npmjs.org/object-assign set size:undefined disposed:false
+51 http fetch GET 200 https://registry.npmjs.org/loose-envify 467ms (cache miss)
+52 silly packumentCache full:https://registry.npmjs.org/loose-envify set size:undefined disposed:false
+53 http fetch GET 200 https://registry.npmjs.org/loose-envify 470ms (cache miss)
+54 silly packumentCache full:https://registry.npmjs.org/loose-envify set size:undefined disposed:false
+55 http fetch GET 200 https://registry.npmjs.org/scheduler 476ms (cache revalidated)
+56 silly packumentCache full:https://registry.npmjs.org/scheduler set size:5248742 disposed:false
+57 http fetch GET 200 https://registry.npmjs.org/@react-leaflet%2fcore 1388ms (cache revalidated)
+58 silly packumentCache full:https://registry.npmjs.org/@react-leaflet%2fcore set size:66182 disposed:false
+59 silly placeDep ROOT loose-envify@1.4.0 OK for: react@17.0.2 want: ^1.1.0
+60 silly placeDep ROOT object-assign@4.1.1 OK for: react@17.0.2 want: ^4.1.1
+61 silly fetch manifest js-tokens@^3.0.0 || ^4.0.0
+62 silly packumentCache full:https://registry.npmjs.org/js-tokens cache-miss
+63 http fetch GET 200 https://registry.npmjs.org/js-tokens 104ms (cache miss)
+64 silly packumentCache full:https://registry.npmjs.org/js-tokens set size:undefined disposed:false
+65 silly placeDep ROOT js-tokens@4.0.0 OK for: loose-envify@1.4.0 want: ^3.0.0 || ^4.0.0
+66 silly placeDep ROOT scheduler@0.20.2 OK for: react-dom@17.0.2 want: ^0.20.2
+67 silly placeDep ROOT @react-leaflet/core@1.1.1 OK for: react-leaflet@3.2.5 want: ^1.1.1
+68 silly reify moves {}
+69 http cache @react-leaflet/core@https://registry.npmjs.org/@react-leaflet/core/-/core-1.1.1.tgz 0ms (cache hit)
+70 http cache object-assign@https://registry.npmjs.org/object-assign/-/object-assign-4.1.1.tgz 0ms (cache hit)
+71 http cache scheduler@https://registry.npmjs.org/scheduler/-/scheduler-0.20.2.tgz 0ms (cache hit)
+72 http cache react-dom@https://registry.npmjs.org/react-dom/-/react-dom-17.0.2.tgz 0ms (cache hit)
+73 http cache loose-envify@https://registry.npmjs.org/loose-envify/-/loose-envify-1.4.0.tgz 0ms (cache hit)
+74 http cache react@https://registry.npmjs.org/react/-/react-17.0.2.tgz 0ms (cache hit)
+75 silly tarball no local data for @react-leaflet/core@https://registry.npmjs.org/@react-leaflet/core/-/core-1.1.1.tgz. Extracting by manifest.
+76 silly tarball no local data for object-assign@https://registry.npmjs.org/object-assign/-/object-assign-4.1.1.tgz. Extracting by manifest.
+77 silly tarball no local data for scheduler@https://registry.npmjs.org/scheduler/-/scheduler-0.20.2.tgz. Extracting by manifest.
+78 http cache js-tokens@https://registry.npmjs.org/js-tokens/-/js-tokens-4.0.0.tgz 0ms (cache hit)
+79 http cache leaflet@https://registry.npmjs.org/leaflet/-/leaflet-1.9.4.tgz 0ms (cache hit)
+80 http cache react-leaflet@https://registry.npmjs.org/react-leaflet/-/react-leaflet-3.2.5.tgz 0ms (cache hit)
+81 silly tarball no local data for react-dom@https://registry.npmjs.org/react-dom/-/react-dom-17.0.2.tgz. Extracting by manifest.
+82 silly tarball no local data for loose-envify@https://registry.npmjs.org/loose-envify/-/loose-envify-1.4.0.tgz. Extracting by manifest.
+83 silly tarball no local data for react@https://registry.npmjs.org/react/-/react-17.0.2.tgz. Extracting by manifest.
+84 silly tarball no local data for js-tokens@https://registry.npmjs.org/js-tokens/-/js-tokens-4.0.0.tgz. Extracting by manifest.
+85 silly tarball no local data for react-leaflet@https://registry.npmjs.org/react-leaflet/-/react-leaflet-3.2.5.tgz. Extracting by manifest.
+86 http fetch GET 200 https://registry.npmjs.org/loose-envify/-/loose-envify-1.4.0.tgz 100ms (cache miss)
+87 http fetch GET 200 https://registry.npmjs.org/object-assign/-/object-assign-4.1.1.tgz 116ms (cache miss)
+88 http fetch GET 200 https://registry.npmjs.org/scheduler/-/scheduler-0.20.2.tgz 170ms (cache miss)
+89 http fetch GET 200 https://registry.npmjs.org/react/-/react-17.0.2.tgz 231ms (cache miss)
+90 http fetch GET 200 https://registry.npmjs.org/js-tokens/-/js-tokens-4.0.0.tgz 555ms (cache miss)
+91 http fetch GET 200 https://registry.npmjs.org/react-leaflet/-/react-leaflet-3.2.5.tgz 959ms (cache miss)
+92 http fetch GET 200 https://registry.npmjs.org/@react-leaflet/core/-/core-1.1.1.tgz 8754ms (cache miss)
+93 http fetch GET 200 https://registry.npmjs.org/react-dom/-/react-dom-17.0.2.tgz 14595ms (cache miss)
+94 silly ADD node_modules/@react-leaflet/core
+95 silly ADD node_modules/scheduler
+96 silly ADD node_modules/js-tokens
+97 silly ADD node_modules/object-assign
+98 silly ADD node_modules/loose-envify
+99 silly ADD node_modules/react-dom
+100 silly ADD node_modules/leaflet
+101 silly ADD node_modules/react
+102 silly ADD node_modules/react-leaflet
+103 verbose cwd E:\Meduverse
+104 verbose os Windows_NT 10.0.26200
+105 verbose node v22.21.1
+106 verbose npm  v10.9.4
+107 verbose exit 0
+108 info ok
