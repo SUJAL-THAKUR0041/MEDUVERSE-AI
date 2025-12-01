@@ -1,162 +1,187 @@
-# Meduverse
+# Meduverse AI
 
-> Lightweight React + Vite front-end for a healthcare/education assistant (local development).
+A comprehensive AI-powered healthcare and educational platform built with React and Vite.
 
-This repository contains a Vite + React app that uses Tailwind, React Router, Lucide icons, and a small Gemini client to call the Generative Language API. The README below explains how to set up, run, and troubleshoot the project locally.
+## 🚀 Features
 
----
+### Health Management
+- **Health Analytics**: Track and analyze health metrics with interactive charts
+- **Medical Assistant**: AI-powered medical consultation and advice
+- **Medication Reminders**: Smart reminder system for medication schedules
+- **Health Insights**: Personalized health recommendations and insights
+- **Medical Journal**: Keep track of medical history and notes
+- **Health Profile**: Comprehensive health profile management
 
-## Quick facts
-- Project root: `E:/Meduverse/Meduverse`
-- Dev server: Vite (`npm run dev`)
-- Node required: Node 16+ (Node 18+ recommended)
+### Educational Tools
+- **Educational Assistant**: AI-powered learning support
+- **Study Hub**: Organized study materials and resources
+- **Learning Paths**: Structured learning journeys
+- **Material Viewer**: Interactive study material viewer
 
----
+### Additional Features
+- **Task Management**: Organize and track daily tasks
+- **Hospital Finder**: Locate nearby healthcare facilities
+- **Doctor Network**: Connect with healthcare professionals
+- **Telemedicine**: Virtual consultation capabilities
+- **AI Chat Assistant**: Powered by Groq AI for intelligent conversations
 
-## Prerequisites
-- Node.js and npm installed
-- (Optional) A Gemini API key for testing AI features. For local tests only — do not commit secrets.
+## 🛠️ Tech Stack
 
----
+- **Frontend**: React 18, Vite
+- **Styling**: Tailwind CSS, Radix UI
+- **Maps**: Leaflet, React-Leaflet
+- **Charts**: Recharts
+- **AI**: Groq API (Llama 3.3)
+- **State Management**: React Query
+- **Routing**: React Router DOM
+- **Animations**: Framer Motion
 
-## Install dependencies
-Open PowerShell in the project root and run:
+## 📋 Prerequisites
 
-```powershell
-Set-Location -Path 'E:\Meduverse\Meduverse'
-npm install
-```
+- Node.js (v16 or higher)
+- npm or yarn
+- Git
 
----
+## 🚀 Installation
 
-## Environment variables
-Create a `.env` file in the project root (do NOT commit this file). Use the `.env.example` already in the repo as a template.
+1. **Clone the repository**
+   ```bash
+   git clone <repository-url>
+   cd meduverse
+   ```
 
-Example `.env`:
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-```
-VITE_GEMINI_API_KEY=your_real_gemini_api_key_here
-```
+3. **Environment Setup**
+   - Copy `.env.example` to `.env`
+   - Add your Groq API key:
+     ```
+     VITE_GROQ_API_KEY=your_groq_api_key_here
+     ```
 
-Notes:
-- Vite exposes `import.meta.env.VITE_*` variables to the client. The code uses `import.meta.env.VITE_GEMINI_API_KEY`.
-- For production, **do not** keep API keys in client-side code — use a server-side proxy.
+4. **Start development server**
+   ```bash
+   npm run dev
+   ```
 
----
+5. **Build for production**
+   ```bash
+   npm run build
+   ```
 
-## Start the dev server
-Run the dev server from the project root:
+## 🔧 Configuration
 
-```powershell
-Set-Location -Path 'E:\Meduverse\Meduverse'
+### API Keys
+- **Groq API**: Get your API key from [Groq Console](https://console.groq.com/)
+- Add `VITE_GROQ_API_KEY` to your environment variables
+
+### Build Configuration
+The app uses Vite for building. Configuration can be found in `vite.config.js`.
+
+## 📱 Usage
+
+### Local Development
+```bash
 npm run dev
 ```
+Open [http://localhost:5173](http://localhost:5173) in your browser.
 
-Open the URL Vite prints (usually `http://localhost:5173` or `http://localhost:3000`).
-
-If you set the `VITE_GEMINI_API_KEY` in the current shell, set it like this in PowerShell (temporary for that session):
-
-```powershell
-$env:VITE_GEMINI_API_KEY = 'your_real_key_here'
-npm run dev
+### Production Build
+```bash
+npm run build
+npm run preview
 ```
+
+## 🚀 Deployment
+
+### Vercel (Recommended)
+1. **Install Vercel CLI**
+   ```bash
+   npm install -g vercel
+   ```
+
+2. **Deploy**
+   ```bash
+   cd Meduverse
+   vercel
+   ```
+
+3. **Set Environment Variables**
+   In Vercel dashboard, add:
+   - `VITE_GROQ_API_KEY`: Your Groq API key
+
+4. **Vercel Configuration**
+   The `vercel.json` file is configured with:
+   - Build command: `npm run build`
+   - Output directory: `dist`
+   - SPA routing support for React Router
+
+### Other Platforms
+The app can be deployed to any static hosting service:
+- Netlify
+- GitHub Pages
+- AWS S3 + CloudFront
+- Firebase Hosting
+
+## 📁 Project Structure
+
+```
+Meduverse/
+├── public/
+├── src/
+│   ├── api/
+│   │   ├── groq.js          # AI API integration
+│   │   ├── localStorage.js  # Local storage utilities
+│   │   └── mockAuth.js      # Authentication mock
+│   ├── components/
+│   │   ├── Assistant/       # AI chat components
+│   │   ├── Health/          # Health-related components
+│   │   ├── Study/           # Educational components
+│   │   └── ui/              # Reusable UI components
+│   ├── entities/            # Data models/schemas
+│   ├── pages/               # Application pages
+│   ├── App.jsx              # Main app component
+│   ├── Layout.jsx           # App layout
+│   ├── main.jsx             # App entry point
+│   └── utils.js             # Utility functions
+├── .env.example             # Environment variables template
+├── .gitignore               # Git ignore rules
+├── package.json             # Dependencies and scripts
+├── tailwind.config.js       # Tailwind CSS config
+├── vite.config.js           # Vite configuration
+└── README.md                # This file
+```
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- [Groq](https://groq.com/) for AI API
+- [Vercel](https://vercel.com/) for hosting platform
+- [React](https://reactjs.org/) community
+- [Tailwind CSS](https://tailwindcss.com/) for styling
+
+## 📞 Support
+
+For support, email support@meduverse.com or join our Discord community.
+
+## 🔄 Updates
+
+Stay tuned for regular updates and new features!
 
 ---
 
-## Recommended safer approach: local server proxy for Gemini (keeps key secret)
-Create a minimal Express proxy (local testing only). Example:
-
-1. Create `server/index.js`:
-
-```javascript
-// server/index.js
-import express from 'express';
-import fetch from 'node-fetch'; // or use global fetch if Node >= 18
-const app = express();
-app.use(express.json());
-
-app.post('/api/gemini/generate', async (req, res) => {
-  try {
-    const key = process.env.GEMINI_API_KEY;
-    if (!key) return res.status(500).json({ error: 'Server missing GEMINI_API_KEY' });
-    const body = { model: 'gemini-pro', prompt: { text: req.body.prompt } };
-    const r = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${key}`, {
-      method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body)
-    });
-    const json = await r.json();
-    res.status(r.status).json(json);
-  } catch (err) {
-    res.status(500).json({ error: String(err) });
-  }
-});
-
-app.listen(3001, () => console.log('Proxy listening on http://localhost:3001'));
-```
-
-2. Initialize and run the server (in a separate terminal):
-
-```powershell
-cd E:\Meduverse\Meduverse\server
-npm init -y
-npm install express node-fetch
-$env:GEMINI_API_KEY = 'your_real_key_here'  # PowerShell temporary
-node index.js
-```
-
-3. Update `src/api/geminiClient.js` to call `/api/gemini/generate` instead of Google's endpoint.
-
----
-
-## Troubleshooting common errors
-- `GEMINI API key is not set` / 403: set `VITE_GEMINI_API_KEY` or use the proxy. Confirm no extra quotes or whitespace.
-- Unresolved imports / module not found: many files have spaces in their filenames (e.g. `Animated Background.jsx`). Import paths must match exact on-disk names. Consider renaming files to remove spaces and use kebab-case or camelCase.
-- `lucide-react` icon not exported: some icon names used in code may not exist in the installed version of `lucide-react` (e.g., `Hospital` vs `Building`). If you see `export not found` errors, replace the icon name or pin the package version.
-- `process is not defined` in browser: ensure code uses `import.meta.env` (Vite) rather than `process.env`.
-- React Router future flag warnings: advisory only. To opt-in to v7 behaviors early, use `createBrowserRouter(routes, { future: { v7_startTransition: true, v7_relativeSplatPath: true } })`.
-
----
-
-## Developer tips
-- Install React DevTools in your browser (Chrome/Edge/Firefox) and open DevTools → React tab.
-- Consider renaming component files to remove spaces for more predictable imports.
-- Use a server-side proxy for the Gemini API in production — never expose production keys in client JS.
-
----
-
-## Project structure (important folders)
-- `src/` — React source
-  - `src/pages/` — page components
-  - `src/components/` — smaller components and UI primitives
-  - `src/components/ui/` — UI primitives (button, input, card, etc.)
-  - `src/api/geminiClient.js` — Gemini client wrapper (uses `import.meta.env`)
-
----
-
-## Quick Hindi (सरल रूप से)
-
-1) प्रोजेक्ट रूट में जाएँ:
-```powershell
-Set-Location -Path 'E:\Meduverse\Meduverse'
-```
-2) डिपेंडेंसी इंस्टॉल करें:
-```powershell
-npm install
-```
-3) `.env` फ़ाइल बनाकर अपनी Gemini की दर्ज करें:
-```text
-VITE_GEMINI_API_KEY=your_real_gemini_api_key_here
-```
-4) dev सर्वर चलाएँ:
-```powershell
-npm run dev
-```
-
-ध्यान दें: अगर Gemini API 403 दे रहा है तो की सही है या नहीं चेक करें, और प्रोडक्शन के लिए की सर्वर-साइड रखें।
-
----
-
-If you want, I can also:
-- add a `server/` folder and implement the proxy code automatically, or
-- rename files to remove spaces and normalize imports across the repo.
-
-Feel free to tell me which of the above you'd like me to do next.
+**Made with ❤️ for better healthcare and education**

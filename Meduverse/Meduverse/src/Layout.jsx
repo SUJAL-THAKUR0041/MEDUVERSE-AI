@@ -60,7 +60,7 @@ export default function Layout({ children, currentPageName }) {
         { name: "MedicalJournal", icon: BookOpen, label: "Journal" },
         { name: "DoctorNetwork", icon: Users, label: "Doctors" },
         { name: "HospitalFinder", icon: Building, label: "Hospitals" },
-        { name: "Maps", icon: Building, label: "Maps" },
+
         { name: "Telemedicine", icon: Video, label: "Telemedicine" },
         { name: "DoctorAdmin", icon: Shield, label: "Doctor Admin" },
       ]

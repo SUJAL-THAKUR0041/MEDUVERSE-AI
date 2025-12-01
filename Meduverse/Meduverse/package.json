@@ -2,6 +2,7 @@
   "name": "meduverse-ai",
   "version": "1.0.0",
   "private": true,
+  "type": "module",
   "dependencies": {
     "@radix-ui/react-slot": "^1.0.0",
     "@tanstack/react-query": "^4.24.0",

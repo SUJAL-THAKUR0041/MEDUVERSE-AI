@@ -1,5 +1,3 @@
-o
-
 import React, { useState } from "react";
 import { geminiClient } from "../api/groq";
 import { mockAuth } from "../api/mockAuth";
