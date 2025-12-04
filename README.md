@@ -1,5 +1,4 @@
 # Meduverse AI
-
 A comprehensive AI-powered healthcare and educational platform built with React and Vite.
 
 ## 🚀 Features
